@@ -1,54 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LogHue – Task Logger</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-<header class="header">
-  <a href="index.html" class="logoContainer">
-    <div class="logo">
-        <img src="assets/TaskyNotes Logo image.png" alt="loghue logo" >
-    </div>
-  </a>
-  <a href="index.html" class="btn">Home</a>
-</header>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logoContainer">
+        <div class="logo">
+          <img src="assets/TaskyNotes Logo image.png" alt="loghue logo" />
+        </div>
+      </a>
+      <a href="index.html" class="btn">Home</a>
+    </header>
 
     <section>
-        <p>Log completed tasks and review your progress anytime.</p>
+      <p>Log completed tasks and review your progress anytime.</p>
     </section>
     <main class="page">
-        
-        <section class="container">
-            <button type="button" id="toggleInputContainer">
-                Open Input Panel
-            </button>
-            <form class="inputContainer">
-                <label for="task">Task Completed</label>
-                <input placeholder="e.g. Fixed API bug" type="text" id="task">
+      <section class="container">
+        <button type="button" id="toggleInputContainer">
+          Open Input Panel
+        </button>
+        <form class="inputContainer">
+          <label for="task">Task Completed</label>
+          <input placeholder="e.g. Fixed API bug" type="text" id="task" />
 
-                <label for="taskTime">Date Completed</label>
-                <input type="datetime-local" id="taskTime">
+          <label for="taskTime">Date Completed</label>
+          <input type="datetime-local" id="taskTime" />
 
-                <label for="note">Notes</label>
-                <textarea id="note" placeholder="Add details about what you finished…"></textarea>
+          <label for="note">Notes</label>
+          <textarea
+            id="note"
+            placeholder="Add details about what you finished…"
+          ></textarea>
 
-                <button id="logTask">Log Task</button>
-            </form>
+          <button id="logTask">Log Task</button>
+        </form>
 
-            <div class="ads">
-                <h2>Bring Your Workflow to the Team Level</h2>
-                <p>Create workspaces. Assign responsibility. Review progress.
-All in one structured system built for accountability.</p>
-                <a href="./../LogHue/index.html" class="btn" target="_blank">Launch Team Version</a>
-            </div>
-        </section>
+        <div class="ads">
+          <h2>Bring Your Workflow to the Team Level</h2>
+          <p>
+            Create workspaces. Assign responsibility. Review progress. All in
+            one structured system built for accountability.
+          </p>
+          <a
+            href="https://loghue.com"
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            >Launch Team Version</a
+          >
+        </div>
+      </section>
 
-        <section id="createdLogs" class="logs"></section>
+      <section id="createdLogs" class="logs"></section>
     </main>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
